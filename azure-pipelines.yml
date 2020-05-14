@@ -45,7 +45,7 @@ steps:
     arguments: '--no-restore --configuration $(buildConfiguration)'
     projects: '**/*.csproj'
 
-- task: DotNetCorecCLI@2
+- task: DotNetCoreCLI@2
   displayName: 'Run Unite Test - $(buildConfiguration)'
   inputs:
     command: 'test'
